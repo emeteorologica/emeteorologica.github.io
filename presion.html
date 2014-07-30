@@ -1,8 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<title>Inicio</title>
-
+<title>Proyecto</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="description" content="Place your description here" />
 <meta name="keywords" content="put, your, keyword, here" />
@@ -18,7 +17,7 @@
 	</script>
 <![endif]-->
 </head>
-<body id="page1">
+<body id="page2">
 <div class="tail-top">
 	<div class="tail-bottom">
 		<div class="body-bg">
@@ -30,15 +29,16 @@
 					<div class="fright"></div>
 				</div>
 				<div class="row-2">
-				  <ul>
-				    <li class="m1"><a href="inicio.html" class="active">Inicio</a></li>
-				    <li class="m2"><a href="presion.html">Proyecto</a></li>
-				    <li class="m3"><a href="temperatura.html">Temperatura</a></li>
-				    <li class="m4"><a href="vel_dir_vient">Vel_Dir_Vient</a></li>
-				    <li class="m5"><a href="precipitacion.html">Precipitación</a></li>
-				    <li class="m6"><a href="galeria.html">Galeria</a></li>
-			      </ul>
-				  <img src="images/slogan.gif" alt="" />
+					<ul>
+						<li class="m1"><a href="inicio.html">Inicio</a></li>
+						<li class="m2"><a href="proyecto.html" class="active">Proyecto</a></li>
+						<li class="m3"><a href="temperatura.html">Temperatura</a></li>
+						<li class="m4"><a href="vel_dir_vient.html">Vel_Dir_Vient</a></li>
+						<li class="m5"><a href="precipitacion.html">Precipitación</a></li>		     
+                        <li class="m6"><a href="galeria.html">galeria</a></li>						
+					</ul>
+				</div>
+				<div class="row-3"><img src="images/slogan.gif" alt="" />
 					<form action="" method="post" id="search-form">
 						<fieldset>
 						<div></div>
@@ -51,27 +51,33 @@
 				<div class="tail-right">
 					<div class="wrapper">
 						<div class="col-1">
-							<div class="indent">
+						  <div class="indent">
 								<div class="indent1">
-								  <p><strong>SISTEMAS DE MEDIOCIÓN CON  TELEMETRÍA PARA ESTACIONES METEOROLÓGICAS </strong></p>
-								  <p style="text-align: justify;">Los sistemas de telemetría se introdujeron a principios del siglo 20 para ser utilizado de supervisión en la naturaleza, ya que se utilizarían para supervisar la distribución de energía eléctrica. Hoy en día la telemetría es de vital importación en muchas áreas principalmente en la industrial, tecnología, entre otras.</p>
-									<p style="text-align: justify;">La telemetría en la actualidad ofrece soluciones completas para monitoreo de variables  meteorológicas; dando confiabilidad en las mediciones y en la transmisión correcta de los datos desde los sitios remotos,  así como también la visualización de los mismos en los centros de control o de monitoreo. </p>
-									<p style="text-align: justify;">Las estaciones meteorológicas en coexistencia con la telemetría hacen que se generen gran cantidad de aplicaciones de  manera rápida y eficiente en lo que respecta a generación y transmisión de energía limpia, recursos hídricos, producción industrial, producción del agro, turismo y recreación, por lo que se las ha llegado a considerar como  redes inteligentes. </p>
-									<p style="text-align: justify;">La transmisión de los datos se los puede hacer por diferentes medios de transmisión tomando en cuenta las condiciones bajo las que operara, se puede seleccionar una red adecuada; de las cuales pueden ser  satelital, radio frecuencia, fibra óptica, Ethernet o GPRS. </p>
-									<p style="text-align: justify;">El desarrollo de una interfaz visual nos permitirá monitorear, registrar e integrar la información a sistemas, además de poder acceder a la información desde cualquier parte del mundo. </p>
-                              </div>
-           <div class="row-2"><img src="images/graf_meteo.jpg" alt="" width="565" height="380" /></div>
-								
- 
-           				<ul class="list1">
-								
+									<h3>Proyecto Meteorológico</h3>
+									<p style="text-align: justify;" class="p0">Este proyecto está enfocado a medir variables físicas para que mediante un tratamiento adecuado de la señal y una respectiva transmisión, se llegue a presentarle en una página web alojando los datos en un servidor gratuito, logrando de esta manera ofrecer servicios meteorológicos a la Universidad Nacional de Loja, en el Área de la Energía las Industrias y los Recursos Naturales No Renovables.</p>
+                                  <p style="text-align: justify;">El software diseñado permite administrar y controlar la estación meteorológica, calibración de los sensores, configuración de los periodos de almacenamiento de los datos y parámetros de comunicación. </p>
+                                  <p style="text-align: justify;">La red de comunicación, consiste en la implementación de un sistema de comunicación en tiempo real, donde se incluye el diseño de una aplicación web necesaria para la comunicación de la estación  con un servidor de datos y por ende con la página web desde donde se podrá observar gráficas y datos de las mediciones hechas por la red de medición de sensores meteorológicos. También a través de la red podemos monitorear la estación en cualquier momento y desde cualquier lugar con acceso a internet.</p>
+                                  <p style="text-align: justify;">Actualmente está configurada para enviar datos cada 30 segundos al servidor emoncms.org a través del protocolo HTTP,  este es un protocolo de red para la transferencia de archivos entre sistemas conectados a una red de internet, basado en la arquitectura cliente-servidor. </p>
+                                  <p style="text-align: justify;">A continuación se dará a conocer un diagrama de bloques de cómo estará constituida esta estación meteorológica:</p>
+                          
+           <div class="row-2"><img src="images/est_meteo1.jpg" alt="" width="565" height="251"/></div>                     
+  
+							
+              	
+ <p style="text-align: justify;"> <strong>Adquisición de datos.-</strong> Aquí se encuentran los sensores que estarán tomando las respectivas mediciones como son: la temperatura, la humedad, la velocidad y dirección del viento,  la precipitación.</p>
+ <p style="text-align: justify;"> <strong>Procesamiento de datos.- </strong>Todos los datos que llegan de los sensores aquí se los adecuara mediante un algoritmo de programación para su posterior envió y presentación.</p>
+ <p style="text-align: justify;"> <strong>Transmisión.-</strong> Se ha empleado el módulo Sim900 GSM/GPRS para el envió de datos a través de una red celular haciendo uso del internet. Cabe mencionar que se enviara una trama con los datos de todos los sensores cada 30 segundos asía el servidor emoncms.org.</p>
+ <p style="text-align: justify;"> <strong>Presentación de los datos.-</strong> Para la presentación se la ha desarrollado una página web y con la ayuda de GitHub, se la logro hacer la publicación de la misma en la red, también es de importancia mencionar que el servidor emoncms.org brinda la posibilidad de enviar los datos a esta página desarrollada y en la que se presentaran los mismos, con tan solo con escribir la dirección electrónica se puede observar el estado meteorológico del sector. </p>
+ </div>
+  <ul class="list1">						
 								
 								</ul>
 							</div>
 						</div>
 						<div class="col-2">
 							<ul>
-							  <li><script src="http://www.clocklink.com/embed.js"></script><script type="text/javascript" language="JavaScript">obj=new Object;obj.clockfile="5005-green.swf";obj.TimeZone="MX-CST";obj.width=120;obj.height=40;obj.wmode="transparent";showClock(obj);</script>
+
+								<li><script src="http://www.clocklink.com/embed.js"></script><script type="text/javascript" language="JavaScript">obj=new Object;obj.clockfile="5005-green.swf";obj.TimeZone="MX-CST";obj.width=120;obj.height=40;obj.wmode="transparent";showClock(obj);</script>
 							    </li>
 							  <li>
 							    
@@ -99,6 +105,7 @@ eventos[0] = new evento (6,3,"Primera version.")
 eventos[1] = new evento (10,3,"Primeras pruebas de proyecto ")
 eventos[2] = new evento (17,3,"Se obtiene los resultados de la implementación del sistema.")
 eventos[3] = new evento (20,3,"Presentación del proyecto completo .")
+
 
 
 //  End Mensaje-------------------------------------------------------------------------------------------------------------->
@@ -232,12 +239,9 @@ document.write(cal);
 						   </li>
                            <a class="twitter-timeline" href="https://twitter.com/Vicente_Poma" data-widget-id="465625553668562945">Tweets por @Vicente_Poma</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-
-							  
-						  </ul>
-                      </div>
-    </li>
+</li>
+								<li></li>
+								<li></li>
 								<li></li>
 							</ul>
 						</div>
@@ -247,7 +251,7 @@ document.write(cal);
 			<!-- FOOTER -->
 			<div id="footer">
 				<div class="indent">
-					<div class="fleft">Designed by:&nbsp;       Vicente Poma <a href="http://russian.templates.com/product/3d-models/">3</a>D</div>
+					<div class="fleft">Designed by:&nbsp; Vicente Poma<a href="http://russian.templates.com/product/3d-models/">3</a>D</div>
 					<div class="fright">viche_poma28@hotmail.es</div>
 				</div>
 			</div>
